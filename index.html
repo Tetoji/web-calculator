@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <title>
+            Calculator
+        </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">        <!--Google font 'Poppins'-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="teststyle.css">                        <!--Style CSS-->
+        <script src="calc.js" defer></script>         <!--Javascript-->
+    </head>
+    <header>
+        <div id = "buttonDark">
+            <div class = "theme-switch-wrapper">
+                <label class = "theme-switch" for = "checkbox">
+                    <input type = "checkbox" id = "checkbox" />
+                    <div class = "slider round"></div>
+                </label>
+                <em>Enable Dark Mode!</em>
+                <script type ="text/javascript" src="switch.js"></script>
+            </div>
+        </div>  
+    </header>
+    <body>
+        <div class = "calcCenter">
+            <div class = "heading">
+                Calculator
+            </div>
+            <div class = "calculator-grid">
+                <div class = "output">
+                    <div data-previous-operand class = "previous-operand"></div>
+                    <div data-current-operand class = "current-operand"></div>
+                </div>
+                <button data-all-clear class="span-two">AC</button>
+                <button data-delete>DEL</button>
+                <button data-operation>÷</button>
+                <button data-number>1</button>
+                <button data-number>2</button>
+                <button data-number>3</button>
+                <button data-operation>*</button>
+                <button data-number>4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button data-operation>+</button>
+                <button data-number>7</button>
+                <button data-number>8</button>
+                <button data-number>9</button>
+                <button data-operation>-</button>
+                <button data-number>.</button>
+                <button data-number>0</button>
+                <button data-equals class="span-two">=</button>
+            </div>
+        </div>
+    </body>
+</html>
